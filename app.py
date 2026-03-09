@@ -42,7 +42,7 @@ for book in st.session_state.books:
     st.write(book)
     found = true
   if found == False:
-    
+     st.write("There are no books from this title")  
 
 st.header(" Търсене по автор")
 search_author = st.text_input("Вúведи име Hа автор") 

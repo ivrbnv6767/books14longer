@@ -4,8 +4,8 @@ if "books" not in st.session_state:
   st.session_state.books = []
   st.header("Add book")
   title =  st.text_input("title")
-  author = st.text_imput("Author")
-  price = st.text_imput("Price", min_value=0.0)
+  author = st.text_input("Author")
+  price = st.text_input("Price", min_value=0.0)
   if st.button("Add book"):
     book = { "title" : title,
             "author" : author,

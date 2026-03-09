@@ -41,8 +41,8 @@ for book in st.session_state.books:
   if book["title"] == search_title:
     st.write(book)
     found = true
-  in found = False:
-  st.write("There are no books from this title")
+  if found == False:
+     st.write("There are no books from this title")
 if st.button ("Show the cheapest book"):
   if len (st.session_state.books) == 0:
     st.write("There's no book")

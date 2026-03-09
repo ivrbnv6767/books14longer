@@ -53,3 +53,11 @@ for book in st.session_state.books:
     cheapest = book
 st.write("The cheapest book")
 st.write(cheapest)
+
+st.header(" Търсене по автор")
+search_author = st.text_input("Вúведи име Hа автор") if st.button("Тьрси по автор"):
+found = False
+for book in st.session_state.books: if book["author"] == search_author: st.write(book)
+found = True
+if found == False:
+st.write("Няма намерени книги от този автор.")

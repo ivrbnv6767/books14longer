@@ -52,7 +52,7 @@ for book in st.session_state.books:
   if book["price"] < cheapest["price"]:
     cheapest = book
 st.write("The cheapest book")
-st.write(cheapest)
+  st.write(cheapest)
 
 st.header(" Търсене по автор")
 search_author = st.text_input("Вúведи име Hа автор") 

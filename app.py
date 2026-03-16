@@ -44,7 +44,8 @@ if st.button("Tursi po avtor"):
         st.write("Nqma namereni knigi ot tozi avtor")
 
 st.header("Tursene po zaglavie")
-search_title = st.text_input("Vuvedi zaglavie")if st.button("Tursi po zaglavie"):
+search_title = st.text_input("Vuvedi zaglavie")
+if st.button("Tursi po zaglavie"):
     found = False
     for book in st.session_state.books:
         if book["title"].lower() == search_title.lower():
